@@ -1,0 +1,26 @@
+@use 'sass:math';
+@import '../../theme/variables';
+
+.container {
+  ul {
+    list-style: none;
+  }
+
+  ul > li {
+    padding-bottom: math.div($base-padding, 3);
+    padding-top: math.div($base-padding, 3);
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  .pending {
+    color: $color-blue;
+  }
+
+  .completed {
+    color: $color-black;
+    text-decoration: line-through;
+  }
+}

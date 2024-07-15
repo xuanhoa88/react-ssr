@@ -1,0 +1,20 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - 12
+  - 14
+  - 16
+
+install:
+  - npm install
+
+script:
+  - npm run clean
+  - npm run build
+  - npm test
+
+branches:
+  only:
+    - master

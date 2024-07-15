@@ -1,0 +1,13 @@
+@use 'sass:math';
+@import '../../theme/variables';
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.logo {
+  display: block;
+  margin-bottom: math.div($base-margin, 4);
+  overflow: hidden;
+}

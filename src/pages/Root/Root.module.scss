@@ -1,0 +1,78 @@
+@import '../../theme/variables';
+
+body {
+  display: flex;
+  flex-direction: column;
+  font: $base-font-size $font-stack;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+
+  header {
+    background-color: $color-primary;
+    box-shadow: 0 2px 2px -1px $color-border;
+    height: $header-height;
+  }
+
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid $color-border;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  :global(.menu) {
+    %active {
+      background-color: lighten($color-primary, 5%);
+      text-decoration: underline;
+    }
+
+    ul {
+      height: $header-height;
+      list-style: none;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0;
+      text-align: center;
+    }
+
+    li > a {
+      color: $color-white;
+      display: inline-block;
+      height: $header-height;
+      line-height: $header-height;
+      min-width: 60px;
+      padding: 0 $base-padding;
+      text-decoration: none;
+    }
+
+    li > a:hover {
+      @extend %active;
+    }
+
+    li > a.active {
+      @extend %active;
+    }
+  }
+
+  :global(.content) {
+    flex: 1 100%;
+    padding: $base-padding;
+  }
+}

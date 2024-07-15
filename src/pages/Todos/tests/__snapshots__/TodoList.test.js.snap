@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList renders correctly 1`] = `
+<div
+  className="todosContainer"
+>
+  <h3>
+    Todo List (0 / 1)
+  </h3>
+  <ul>
+    <li>
+      <span
+        className="pending"
+      >
+        todo value
+         (ID: 
+        1
+        )
+      </span>
+    </li>
+  </ul>
+</div>
+`;

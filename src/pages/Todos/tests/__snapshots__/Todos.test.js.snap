@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos renders correctly 1`] = `
+<div
+  className="todosContainer"
+>
+  <h3>
+    Todo List (0 / 0)
+  </h3>
+  <ul />
+</div>
+`;

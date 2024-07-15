@@ -1,0 +1,15 @@
+coverage
+node_modules
+build
+dist
+
+.DS_Store
+*.log
+*.map
+*-properties.*
+*.lock
+package-lock.json
+
+.env
+.env.local
+.env.*.local
